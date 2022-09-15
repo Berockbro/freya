@@ -1,0 +1,9 @@
+.Form{
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.Cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

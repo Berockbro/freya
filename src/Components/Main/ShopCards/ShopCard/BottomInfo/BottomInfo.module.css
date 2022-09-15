@@ -1,0 +1,24 @@
+.BottomInfo button{
+    height: 30px;
+    width: 100px;
+    background-color: #431e58;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#buttonSpan{
+    color: #fff;
+    font-size: 16px;
+}
+#bottomStateInfo{
+    font-size: 16px;
+    font-weight: 700;
+    color: #a368b8;
+    
+}
+#bottomInfoSpan{
+    font-size: 23px;
+    font-weight: 700;
+    color: #431e58;
+}

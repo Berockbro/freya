@@ -1,0 +1,38 @@
+.NavHeader {
+    
+    background-color: #fff;
+    align-items: center;
+    height: 80px;
+}
+
+.NavHeader ul{
+    display: inline-grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 60px;
+    padding-inline-start: 0px;
+}
+
+.NavHeader li{
+   
+    
+    list-style: none;
+}
+
+.NavHeader li a{
+    
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color:#431e58;
+
+}
+
+.NavHeader span:hover{
+    
+    color: rgb(230, 138, 34);
+   
+}
+.NavHeader nav {
+    width: 1150px;
+    padding: 15px 100px;
+}

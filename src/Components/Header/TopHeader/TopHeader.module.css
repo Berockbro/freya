@@ -1,0 +1,23 @@
+.TopHeader {
+    display: grid;
+    
+    grid-template-columns: 120px 500px auto auto;
+    height: 145px;
+    gap: 117px;
+ 
+    align-items: center;
+    justify-items: center;
+}
+
+.FreyaLogo {
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+}
+
+
+.TopIcon {
+    width: 40px;
+    height: 35px;
+}
+

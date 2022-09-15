@@ -1,0 +1,47 @@
+.Categories {
+    display: grid;
+    background-color: #e3d3e6;
+    height: 250px;
+    width: 100%;
+    align-items: center;
+    
+}
+.Categories ul{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5,auto);
+    justify-content: center;
+    
+}
+.Categories li a{
+    display: grid;
+    
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    height: 204px;
+    width: 204px;
+}
+.Categories img{
+    height: 204px;
+    width: 204px;
+}
+
+.Categories span{
+    text-shadow: 2px 1px #000;
+    width: 204px;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    color: #fff;
+   
+}
+.Categories span:hover{
+    
+    color: rgb(230, 138, 34);
+   
+}
+.Categories li{
+    
+    list-style: none;
+}

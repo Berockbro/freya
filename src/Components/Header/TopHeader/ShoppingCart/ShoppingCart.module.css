@@ -1,0 +1,29 @@
+.ShoppingCart {
+    cursor: pointer;
+    height: 60px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.ShoppingCart span {
+    color: #fff;
+}
+
+.Count{
+    position: absolute;
+    font-size: 11px;
+    border-radius: 50%; 
+    background-color: #431e58;
+    border: 0px solid #431e58;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    align-self: start;
+    justify-self: end;
+    
+}
+
+.ShoppingCart img {
+    width: 40px;
+    height: 30px;
+}

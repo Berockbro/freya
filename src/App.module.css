@@ -1,0 +1,8 @@
+.App{
+    display:  grid;
+    justify-content: center;
+}
+
+.App span {
+    font-family: Arial,sans-serif;
+}

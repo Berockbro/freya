@@ -1,0 +1,35 @@
+
+.SearchBar button{
+    background-color: #431e58;
+    border: 0;
+    cursor: pointer;
+    width: 60px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.SearchBar  {
+    
+    display: grid;
+    height: 35px;
+    grid-template-columns: 100% 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchBar input {
+    
+    height: 25px;
+    outline: none;
+    border: 6px solid #fff;
+    font-size: 13px;
+    width: 1fr;
+    border-radius: 20px 0 0 20px;
+}
+
+
+.SearchBar img {
+    width: 25px;
+    height: 20px;
+}

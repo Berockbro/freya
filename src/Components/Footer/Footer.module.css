@@ -1,0 +1,74 @@
+.Footer {
+    
+    background-color: #431e58;
+    
+}
+.Footer li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    
+}
+.Footer li {
+    color: #fff;
+    list-style: none;
+}
+.links h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #fff;
+    font-size: 19px;
+}
+.links span {
+    color: #fff;
+    
+}
+.Footer ul {
+    padding-inline-start: 0px;
+}
+
+.links {
+    
+    column-gap: 40px ;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.LogoContainer {
+    display: grid;
+    justify-content: center;
+}
+.FreyaLogo {
+    margin-top: 30px;
+    margin-right: 115px;
+    width: 120px;
+    height: 120px;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+}
+.SocialNetworks {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 30px 40px;
+    
+}
+.SocialNetworks span{
+    color:#fff;
+    
+}
+.NetworksContainer {
+    display: grid;
+    grid-template-columns: 40px 40px;
+    gap: 10px
+}
+
+.FooterContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto 1fr auto;
+    padding: 15px 100px;
+    gap: 100px;
+    background-color: linear-gradient(180deg,#ccb4f2,#52416e);
+}

@@ -1,0 +1,21 @@
+.ShopCards {
+    display: grid;
+    
+    padding: 10px 100px;
+}
+.ShopCards h2{
+    font-size: 24px;
+    color: #431e58;
+}
+.ShopCardContainer {
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+.ShopCardTitelContainer {
+    display: grid;
+    height: 80px;
+    align-items: center;
+}
+
