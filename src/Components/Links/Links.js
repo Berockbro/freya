@@ -1,49 +1,40 @@
+import React, { useContext, useEffect, useState } from "react";
+import { LinksContext } from "../../contexts/links.context";
 
-import { LinksContext } from "../../App";
-import React from "react";
+const Links = (props) => {
+  const [renderItems, setItems] = useState([]);
+  const { links } = useContext(LinksContext);
 
-
-function Links(props) {
-   
-    const Items2 = []
-    const {Links} = React.useContext(LinksContext)
-    
-    if (props.img === 1) {
-        const ListItems = Links.link.map((number)=> 
-        <li key={number.key}> 
-            <div>
-                <a href={number.href}>
-                    <span>{number.name}</span>
-                    <img src={number.img} alt=""/>
-                </a>
-            </div>
-         </li>)
-     
-         for (let i=0; i<props.linkNumbers.length; i++) { 
-             Items2.push(ListItems[props.linkNumbers[i]])
-           
-            } 
+  useEffect(() => {
+    let items = [];
+    for (let i = 0; i < props.linkNumbers.length; i++) {
+      items.push(links[props.linkNumbers[i]]);
     }
-    else {
-        const ListItems = Links.link.map((number)=> 
-        <li key={number.key}> 
-            <div>
-                <a href={number.href}>
-                    <span >{number.name}</span>
-                    
-                </a>
-             </div>
-         </li>)
-     
-         for (let i=0; i<props.linkNumbers.length; i++) { 
-             Items2.push(ListItems[props.linkNumbers[i]])
-         } 
-    }
-    
-    return (Items2)
-    
-}
+    setItems(items);
+  }, [links, props.linkNumbers]);
 
+  if (!renderItems.length) return null;
 
+  return (
+    <ul>
+      {renderItems.map((item) => {
+        if (item) {
+          return (
+            <li key={item.key}>
+              <div>
+                {item.href && (
+                  <a href={item.href}>
+                    <span>{item.name}</span>
+                    {item.img && props.showImg && <img src={item.img} alt="" />}
+                  </a>
+                )}
+              </div>
+            </li>
+          );
+        }
+      })}
+    </ul>
+  );
+};
 
-export default Links
+export default Links;
