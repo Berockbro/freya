@@ -1,18 +1,13 @@
-import style from './LinksPage.module.css'
-import Links from '../../Links/Links'
+import style from "./LinksPage.module.css";
+import Links from "../../Links/Links";
 
+const LinksPage = (props) => {
+  return (
+    <div className={style.LinksPage}>
+      <h2>{props.name}</h2>
+        <Links linkNumbers={props.Links} />
+    </div>
+  );
+};
 
-function LinksPage (props) {
-    return(
-        <div className={style.LinksPage}>
-            <h2>{props.name}</h2>
-            <ul>
-                <Links
-                    linkNumbers={props.Links} 
-                />
-            </ul>
-        </div>
-    )
-}
-
-export default LinksPage
+export default LinksPage;

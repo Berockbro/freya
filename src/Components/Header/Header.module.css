@@ -1,11 +1,6 @@
 .Header {
-   
-    display: grid;
-    height: 240px;
-    width: 100%;
-    background-color: #9b86bf;
-}
-
-.container {
-    padding: 10px 100px;
+  display: grid;
+  height: 240px;
+  width: 100%;
+  background-color: #9b86bf;
 }
